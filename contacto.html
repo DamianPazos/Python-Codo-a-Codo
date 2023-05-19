@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+    <title>Salta La linda!</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          Logo
+        </div>
+        <div class="links">
+          <p><a href="index.html">Inicio</a></p>
+          <p><a href="historia.html">Historia</a></p>
+          <p><a href="destinos.html">Destinos</a></p>
+          <p><a href="alojamientos.html">Alojamiento</a></p>
+          <p><a href="contacto.html">Contacto</a></p>
+  
+          <strong id="mobile-menu-btn">☰</strong>
+        </div>
+      </nav>
+      <!-- Small Screen Navigation Bar -->
+      <div class="mobile-menu">
+          <p><a href="index.html">Inicio</a></p>
+          <p><a href="historia.html">Historia</a></p>
+          <p><a href="destinos.html">Destinos</a></p>
+          <p><a href="alojamientos.html">Alojamiento</a></p>
+          <p><a href="contacto.html">Contacto</a></p>
+      </div>
+
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">Nombre/s</label>
+          <input type="text" id="fname" name="firstname" placeholder="Su nombre..">
+      
+          <label for="lname">Apellido</label>
+          <input type="text" id="lname" name="lastname" placeholder="Su apellido..">
+      
+          <label for="country">País</label>
+          <select id="country" name="country">
+            <option value="argentina">Argentina</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="brasil">Brasil</option>
+          </select>
+      
+          <label for="subject">Su consulta</label>
+          <textarea id="subject" name="subject" placeholder="Déjenos su comentario o consulta.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Enviar">
+      
+        </form>
+      </div>  
+</body>
+</html>
