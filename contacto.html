@@ -10,14 +10,13 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-          Logo
-        </div>
+      <div class="logo">
+        <img src="./img/Logo de WEB Footer completo.png" alt="">
+    </div>
         <div class="links">
           <p><a href="index.html">Inicio</a></p>
           <p><a href="historia.html">Historia</a></p>
           <p><a href="destinos.html">Destinos</a></p>
-          <p><a href="alojamientos.html">Alojamiento</a></p>
           <p><a href="contacto.html">Contacto</a></p>
   
           <strong id="mobile-menu-btn">☰</strong>
@@ -28,7 +27,6 @@
           <p><a href="index.html">Inicio</a></p>
           <p><a href="historia.html">Historia</a></p>
           <p><a href="destinos.html">Destinos</a></p>
-          <p><a href="alojamientos.html">Alojamiento</a></p>
           <p><a href="contacto.html">Contacto</a></p>
       </div>
 
@@ -47,11 +45,11 @@
             <option value="uruguay">Uruguay</option>
             <option value="brasil">Brasil</option>
           </select>
-      
+          <label for="email">Su Email</label><input type="email" name="email" id="email" placeholder="Ingrese su mail" required>
           <label for="subject">Su consulta</label>
           <textarea id="subject" name="subject" placeholder="Déjenos su comentario o consulta.." style="height:200px"></textarea>
       
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" onclick="validateEmail(this.email)">
       
         </form>
       </div>  

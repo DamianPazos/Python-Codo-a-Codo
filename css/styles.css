@@ -8,14 +8,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
-    background-color: rgb(230, 151, 5);
+    padding: 0px 30px 30px 30px;
+    background-color: #A0937D;
     color: white;
-    height: 8vh;
+    height: 20vh;
   }
   nav .links {
     display: flex;
   }
+
+  nav .logo img {
+    height: 50px;
+    display: block;
+}
+
+  
   .links p a {
     padding: 10px;
     color: #fff;
@@ -32,7 +39,7 @@
     right: 0;
     height: 60vh;
     width: 60vw;
-    background-color: rgb(230, 151, 5);
+    background-color: #A0937D;
   }
     
   
@@ -57,7 +64,7 @@
         color: #fff;
       text-decoration: none;
     }
-    }
+    } /* fin media */
 
   
    
@@ -71,10 +78,19 @@
         margin-bottom: 16px;
         resize: vertical  
       }
-      
+      input[type=email] {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px;
+        box-sizing: border-box; 
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical  
+      }  
       
       input[type=submit] {
-        background-color: #ce910e;
+        background-color:  #A0937D;
         color: white;
         padding: 12px 20px;
         border: none;
