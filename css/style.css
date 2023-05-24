@@ -4,11 +4,11 @@
 }
 
 .main {
-    background-color: #F6E6CB; /* Color de fondo de la paguina*/
+    background-color: #F6E6CB; /* Color de fondo de la pagina*/
 }
 
 .carousel {
-    height: 50vh; /* Altura del section donde se encuentra el carousel */
+    height: 50vh;/* Altura del section donde se encuentra el carousel */
     display: flex; /*  */
     align-items: center; /*  */
     margin-bottom: 10px;
