@@ -31,7 +31,7 @@
       </div>
 
     <div class="container">
-        <form action="action_page.php">
+        <form action="" name="form_contacto" id="form_contacto">
       
           <label for="fname">Nombre/s</label>
           <input type="text" id="fname" name="firstname" placeholder="Su nombre..">
@@ -49,7 +49,7 @@
           <label for="subject">Su consulta</label>
           <textarea id="subject" name="subject" placeholder="Déjenos su comentario o consulta.." style="height:200px"></textarea>
       
-          <input type="submit" value="Enviar" onclick="validateEmail(this.email)">
+          <input type="submit" value="Enviar" onclick="validateEmail(document.form_contacto.email.email)">
       
         </form>
       </div>  
