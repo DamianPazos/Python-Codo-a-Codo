@@ -16,7 +16,7 @@
 <body>
     <!-- Nav desarrollado por Ricardo -->
     <!-- Large Screen Navigation Bar -->
-    <nav>
+    <!-- <nav>
         <div class="logo">
             <img src="./img/Logo de WEB Footer completo.png" alt="">
         </div>
@@ -29,13 +29,30 @@
             <strong id="mobile-menu-btn">☰</strong>
         </div>
     </nav>
+-->
     <!-- Small Screen Navigation Bar -->
-    <div class="mobile-menu">
+    <!--<div class="mobile-menu">
         <p><a href="index.html">Inicio</a></p>
         <p><a href="historia.html">Historia</a></p>
         <p><a href="destinos.html">Destinos</a></p>
         <p><a href="contacto.html">Contacto</a></p>
-    </div>
+    </div> -->
+    <header>
+        <h2 class="logo">Salta</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="">Home</a>
+            <a href="">Historia</a>
+            <a href="">Destinos</a>
+            <a href="">Conctacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
     <!-- Main desarrollado por Damian -->
     <main class="main">
         <section class="carousel-images">
@@ -51,29 +68,24 @@
                 </div>
             </div>
         </section>
-        <section class="card-place">
-            <div class="card-container">
-                <div class="card-item">
-                    <h3 class="card-title">Ciudad de Salta</h3>
-                    <div class="card-image-container">
-                        <img class="card-image" src="img/ciudad-salta.jpg" alt="Ciudad de Salta">
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h3 class="card-title">Cafayate</h3>
-                    <div class="card-image-container">
-                        <img class="card-image" src="img/cafayate-salta.jpg" alt="Cafayate">
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h3 class="card-title">Cachi</h3>
-                    <div class="card-image-container">
-                        <img class="card-image" src="img/cachi-salta.jpg" alt="Cachi">
-                    </div>
-                </div>
+        <section id='place' class="card-place">
+            <div class="div-card-container">
+                <img src="img/ciudad-salta.jpg" alt="Ciudad de Salta">
+                <h3>Ciudad de Salta</h3>
+                <a href="#" class="btn-more">Saber mas</a>
+            </div>
+            <div class="div-card-container">
+                <img src="img/cachi-salta.jpg" alt="Ciudad de Salta">
+                <h3>Cachi</h3>
+                <a href="#" class="btn-more">Saber mas</a>
+            </div>
+            <div class="div-card-container">
+                <img src="img/cafayate-salta.jpg" alt="Ciudad de Salta">
+                <h3>Cafayate</h3>
+                <a href="#" class="btn-more">Saber mas</a>
             </div>
         </section>
-        <section class="map">
+        <section id='map' class="map-salta">
             <div class="map-container">
                 <h3 class="map-title">Descrubi Salta</h3>
                 <iframe class="map-iframe"
