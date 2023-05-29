@@ -105,9 +105,17 @@ header{
 /* DAMIAN */
 
 /*Main*/
-.main {
+.main,
+.main-historia,
+.main-destinos {
     background-color: #F6E6CB;
     /* Color de fondo de la pagina*/
+}
+
+.main-historia,
+.main-destinos {
+    padding: 50px;
+    width: 100%;
 }
 
 /* Carousel */
@@ -216,6 +224,63 @@ header{
     border-width: 0px;
     border-color: black;
 }
+
+/* Historia */
+
+.container-historia h1{
+    padding-bottom: 20px;
+}
+
+.container-historia h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Destinos */
+
+.container-destinos h2{
+    padding-bottom: 20px;
+}
+
+.container-destinos p{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.clima {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    text-align: center;
+    border: #887d6a 3px solid;
+    background-color: white;
+}
+
+.clima:hover {
+    background-color:#887d6a;
+    color: white;
+    transition:0.2s;
+}
+
+.city {
+    font-size:25px;
+    text-transform: uppercase;
+    margin-bottom:5px;
+}
+
+.date {
+    font-size:18px;
+}
+
+.temperature {
+    font-size:22px;
+    font-weight: bold;
+}
+
+.weather {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
 
 /* FRANCO */
 

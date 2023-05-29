@@ -9,7 +9,7 @@ let maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
 const start = () => {
     interval = setInterval(function () {
         carousel.scrollLeft = carousel.scrollLeft + step;
-        if (carousel.scrollLeft === maxScrollLeft ){
+        if (carousel.scrollLeft === maxScrollLeft) {
             step = -0.5;
         }
         else if (carousel.scrollLeft === 0) {

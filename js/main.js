@@ -1,4 +1,4 @@
-var mobileMenuBtn = document.querySelector("#mobile-menu-btn");
+/* var mobileMenuBtn = document.querySelector("#mobile-menu-btn");
 var mobileMenu = document.querySelector(".mobile-menu");
 
 mobileMenuBtn.addEventListener("click", () => {
@@ -10,7 +10,7 @@ mobileMenuBtn.addEventListener("click", () => {
     mobileMenuBtn.innerHTML = " ☰";
   }
 });
-
+ */
 
 function validarEmail(emailId)
 {
