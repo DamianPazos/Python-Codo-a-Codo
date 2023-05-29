@@ -1,11 +1,4 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  transition: 0.5 s;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +6,7 @@ nav {
   background-color: rgb(230, 151, 5);
   color: white;
   height: 8vh;
-}
+} 
 
 nav .links {
   display: flex;
@@ -116,7 +109,7 @@ nav .links {
         color: #fff;
       text-decoration: none;
     }
-    } /* fin media */
+    } /* fin media */ /*
   .mobile-menu {
     display: none;
     flex-direction: column;
@@ -130,6 +123,7 @@ nav .links {
   }
 }
 
+*/
   
    
     input[type=text], select, textarea {
@@ -210,3 +204,4 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
