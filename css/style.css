@@ -8,7 +8,7 @@
 /* Ricardo*/
 /* Nav */
 
-header{
+header {
     height: 100px;
     background-color: #887d6a;
     padding: 0 50px;
@@ -24,7 +24,7 @@ header{
     font-weight: 200px;
 }
 
-.menu a{
+.menu a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -41,7 +41,7 @@ header{
 }
 
 .mostrar-menu {
-    order:1;
+    order: 1;
 }
 
 .menu a:hover,
@@ -57,18 +57,22 @@ header{
 /* Responsive */
 
 @media (max-width: 768px) {
+
     /*Header*/
     .mostrar-menu,
     .esconder-menu {
         display: block;
     }
 
-    .menu{
-        position: fixed; /*  */
+    .menu {
+        position: fixed;
+        /*  */
         width: 100%;
-        height: 100vh; /* Ocupa toda la pantalla del dispositivo */
+        height: 100vh;
+        /* Ocupa toda la pantalla del dispositivo */
         background-color: #887d6a;
-        right: -100%; /* Para poder visualizarlo desde la derecha */
+        right: -100%;
+        /* Para poder visualizarlo desde la derecha */
         top: 0;
         text-align: center;
         padding: 100px 0px;
@@ -76,7 +80,7 @@ header{
         transition: 0.8s;
     }
 
-    .menu a{
+    .menu a {
         display: block;
         padding: 20px;
     }
@@ -87,13 +91,13 @@ header{
         right: 40px;
     }
 
-    #check:checked ~ .menu{
+    #check:checked~.menu {
         right: 0;
     }
 
     /* Card */
-    .card-place{
-        flex-direction:column;
+    .card-place {
+        flex-direction: column;
     }
 
     /* Map */
@@ -158,7 +162,7 @@ header{
 
 /* Cards */
 
-.card-place{
+.card-place {
     padding: 50px 50px 0px;
     display: flex;
     justify-content: center;
@@ -195,11 +199,11 @@ header{
 
 .btn-more:hover {
     background-color: white;
-    color:#887d6a
+    color: #887d6a
 }
 
 /* Map */
-.map-salta{
+.map-salta {
     padding: 50px 50px 50px 50px;
     display: flex;
     justify-content: center;
@@ -227,24 +231,24 @@ header{
 
 /* Historia */
 
-.container-historia h1{
+.container-historia h1 {
     padding-bottom: 20px;
 }
 
-.container-historia h3{
+.container-historia h3 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 /* Destinos */
 
-.container-destinos h2{
+.container-destinos h2 {
     padding-bottom: 20px;
 }
 
-.container-destinos p{
-    padding-top:10px;
-    padding-bottom:10px;
+.container-destinos p {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .clima {
@@ -256,23 +260,23 @@ header{
 }
 
 .clima:hover {
-    background-color:#887d6a;
+    background-color: #887d6a;
     color: white;
-    transition:0.2s;
+    transition: 0.2s;
 }
 
 .city {
-    font-size:25px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
 
 .date {
-    font-size:18px;
+    font-size: 18px;
 }
 
 .temperature {
-    font-size:22px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -387,4 +391,86 @@ header{
         grid-column-gap: 30px;
         padding: 20px 0px;
     }
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #A0937D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #ce910e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
