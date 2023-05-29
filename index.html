@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Logo WEB (icono).ico">
+    <script src="https://kit.fontawesome.com/aec6776eed.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
+    <title>Descubrí Salta</title>
 </head>
+
 <body>
-    
+    <!-- Nav desarrollado por Ricardo -->
+    <!-- Large Screen Navigation Bar -->
+    <!-- <nav>
+        <div class="logo">
+            <img src="./img/Logo de WEB Footer completo.png" alt="">
+        </div>
+        <div class="links">
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="historia.html">Historia</a></p>
+            <p><a href="destinos.html">Destinos</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+
+            <strong id="mobile-menu-btn">☰</strong>
+        </div>
+    </nav>
+-->
+    <!-- Small Screen Navigation Bar -->
+    <!--<div class="mobile-menu">
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="historia.html">Historia</a></p>
+        <p><a href="destinos.html">Destinos</a></p>
+        <p><a href="contacto.html">Contacto</a></p>
+    </div> -->
+    <header>
+        <h2 class="logo">Salta</h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="historia.html">Historia</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="contacto.html">Conctacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <!-- Main desarrollado por Damian -->
+    <main class="main">
+        <section class="carousel-images">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item"><img src="img/salta1.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="img/salta2.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="img/salta3.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="img/salta4.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="img/salta5.jpg" alt=""></div>
+                    <div class="carousel-item"><img src="img/salta6.jpg" alt="Quebrada de las Conchas"></div>
+                    <div class="carousel-item"><img src="img/salta7.jpg" alt="Parque Nacional 'El Rey'"></div>
+                </div>
+            </div>
+        </section>
+        <section id='place' class="card-place">
+            <div class="div-card-container">
+                <img src="img/ciudad-salta.jpg" alt="Ciudad de Salta">
+                <h3>Ciudad de Salta</h3>
+                <a href="#" class="btn-more">Saber mas</a>
+            </div>
+            <div class="div-card-container">
+                <img src="img/cachi-salta.jpg" alt="Ciudad de Salta">
+                <h3>Cachi</h3>
+                <a href="#" class="btn-more">Saber mas</a>
+            </div>
+            <div class="div-card-container">
+                <img src="img/cafayate-salta.jpg" alt="Ciudad de Salta">
+                <h3>Cafayate</h3>
+                <a href="#" class="btn-more">Saber mas</a>
+            </div>
+        </section>
+        <section id='map' class="map-salta">
+            <div class="map-container">
+                <h3 class="map-title">Descrubi Salta</h3>
+                <iframe class="map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1863273.4682985086!2d-66.77685141565667!3d-24.19956409392065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0d2938ead0c7%3A0x8b4a1bd1f6c37998!2sSalta!5e0!3m2!1ses-419!2sar!4v1684386860851!5m2!1ses-419!2sar"
+                    width="600" height="450"></iframe>
+            </div>
+        </section>
+    </main>
+    <!-- Footer desarrollado por Franco -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/Logo de WEB Footer completo.png" alt="Logo de la Web">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>OFICINA DE TURISMO</h2>
+                <p>Dirección: Buenos Aires 93, A4400 Salta.</p>
+                <p>Teléfono: 0387 431-0650.</p>
+                <p>Horario de Atención: 08:00 a 20:00.</p>
+            </div>
+            <div class="box">
+                <h2>SEGUINOS</h2>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/Visit.Salta/" target="_blank" class="fa-brands fa-facebook-f"
+                        style="color: #ffffff;"></a>
+                    <a href="https://www.instagram.com/visitsalta/" target="_blank" class="fa-brands fa-instagram"
+                        style="color: #ffffff;"></a>
+                    <a href="https://www.youtube.com/user/SaltaPromo" target="_blank" class="fa-brands fa-youtube"
+                        style="color: #ffffff;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small> &copy; 2023 <b>Descubrí Salta</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="index_code.js"></script>
 </body>
 </html>

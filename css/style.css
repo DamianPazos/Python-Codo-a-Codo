@@ -1,0 +1,476 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ricardo*/
+/* Nav */
+
+header {
+    height: 100px;
+    background-color: #887d6a;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200px;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: black;
+}
+
+#check {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    /*Header*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        /*  */
+        width: 100%;
+        height: 100vh;
+        /* Ocupa toda la pantalla del dispositivo */
+        background-color: #887d6a;
+        right: -100%;
+        /* Para poder visualizarlo desde la derecha */
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    /* Card */
+    .card-place {
+        flex-direction: column;
+    }
+
+    /* Map */
+    .map-title {
+        display: none;
+    }
+}
+
+/* DAMIAN */
+
+/*Main*/
+.main,
+.main-historia,
+.main-destinos {
+    background-color: #F6E6CB;
+    /* Color de fondo de la pagina*/
+}
+
+.main-historia,
+.main-destinos {
+    padding: 50px;
+    width: 100%;
+}
+
+/* Carousel */
+.carousel {
+    height: 50vh;
+    /* Altura del section donde se encuentra el carousel */
+    width: 100%;
+    /* Ancho del section donde se encuentra el carousel */
+    display: flex;
+    /*  */
+    align-items: center;
+    /*  */
+    margin-bottom: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 20px 0px 20px 0px;
+}
+
+.carousel-item {
+    min-width: 33%;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.carousel-item:hover {
+    transform: scale(1.2);
+}
+
+/* Cards */
+
+.card-place {
+    padding: 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-place img {
+    border-radius: 30%;
+    width: 100%;
+    border-color: #887d6a;
+    border-style: solid;
+}
+
+.card-place div {
+    padding: 30px 30px;
+}
+
+.card-place div h3 {
+    color: #887d6a;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+.btn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.btn-more:hover {
+    background-color: white;
+    color: #887d6a
+}
+
+/* Map */
+.map-salta {
+    padding: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.map-container {
+    background-color: #E7D4B5;
+    width: 60%;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-title {
+    padding: 5px;
+}
+
+.map-iframe {
+    width: 100%;
+    border-width: 0px;
+    border-color: black;
+}
+
+/* Historia */
+
+.container-historia h1 {
+    padding-bottom: 20px;
+}
+
+.container-historia h3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Destinos */
+
+.container-destinos h2 {
+    padding-bottom: 20px;
+}
+
+.container-destinos p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.clima {
+    margin: 20px 20px;
+    padding: 20px 20px;
+    text-align: center;
+    border: #887d6a 3px solid;
+    background-color: white;
+}
+
+.clima:hover {
+    background-color: #887d6a;
+    color: white;
+    transition: 0.2s;
+}
+
+.city {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 18px;
+}
+
+.temperature {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.weather {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/* FRANCO */
+
+.map {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.pie-pagina {
+    width: 100%;
+    background-color: #A0937D;
+}
+
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
+    padding: 30px 0px;
+}
+
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-bottom: 100px;*/
+    padding-top: 15px;
+}
+
+
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 220px;
+}
+
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.pie-pagina .grupo-1 .redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+
+.pie-pagina .grupo-1 .redes-sociales a {
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #887d6a;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+
+.pie-pagina .grupo-1 .redes-sociales a:hover {
+    transform: scale(1.1);
+}
+
+
+.pie-pagina .grupo-2 {
+    color: #A0937D;
+    background-color: #E7D4B5;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        padding: 20px 0px;
+    }
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #A0937D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #ce910e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
